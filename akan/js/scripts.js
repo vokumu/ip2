@@ -3,6 +3,7 @@
 function claculateBirthDay() {
     var gender=document.getElementById('gender').value;
     var birthday=document.getElementById('birthday').value;
+    console.log(birthday)
     
 }
 
