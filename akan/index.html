@@ -9,8 +9,104 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    
-    <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto header">
+            <h1 class="display-4 text-center">Akan Nameing Application</h1>
+            <p >This is a simple web application that uses ones Date, Month and Year of birth to  determine the day of the week when someone was born.It goes a step further depending on the users gender and the day of the week bord determine their Akan i.e Ghanian Name. Follow the instructions below to get results;</p>
+            <ol>
+                <li>Provide Date of Birth</li>
+                <li>Provide Gender</li>
+                <li>Submit to get your Akan Name</li>
+            </0l>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Fill in the form below
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Date of Birth *</label>
+                      <input type="date" class="form-control form-control-lg" id="birthday" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Gender *</label>
+                      <select class="custom-select my-1 mr-sm-2 form-control form-control-lg" id="gender" name="gender" required>
+                        <option value="">Choose...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Ghanian Name</label>
+                      <input type="text" class="form-control form-control-lg" id="ghanianName" name="ghanianName" readonly>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit" onclick="getVariables()"/>
+                  </form>
+              
+            </div>
+          </div>
+          <section class="mt-5 pt-5">
+              <hr/>
+              <h3 class="text-center">Ghanian Day names</h3>
+              
+            <table class="table">
+                <thead class="darkbg">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Day of the week</th>
+                    <th scope="col">Female Name</th>
+                    <th scope="col">Male Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Sunday</td>
+                    <td>Akosua</td>
+                    <td>Kwasi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Monday</td>
+                    <td>Adwoa</td>
+                    <td>Kwadwo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Teusday</td>
+                    <td>Abenaa</td>
+                    <td>Kwabena</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Wednesday</td>
+                    <td>Akua</td>
+                    <td>Kwaku</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Thursday</td>
+                    <td>Yaa</td>
+                    <td>Yaw</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Friday</td>
+                    <td>Afua</td>
+                    <td>Kofi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Saturday</td>
+                    <td>Ama</td>
+                    <td>Kwame</td>
+                  </tr>
+                </tbody>
+              </table>
+          </section>
+
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>

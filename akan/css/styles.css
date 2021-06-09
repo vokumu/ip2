@@ -1,0 +1,30 @@
+html{
+    font-family: 'Muli',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(84, 84, 84);
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+h1,h2,h3{
+    color: #2F1C6A;
+}
+body{
+font-size: 18px;
+line-height: 2;
+}
+.darkbg{
+    background-color: #2F1C6A !important;
+    color: #fff;
+}
+
+.header{
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
