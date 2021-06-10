@@ -9,7 +9,8 @@ function claculateBirthDay() {
     var DD=parseInt(birthDateSplit.pop());
     var MM=parseInt(birthDateSplit.pop());
     var YY=birthDateSplit.pop();
-    console.log(YY)
+    var CC=parseInt(YY.slice(0,2))
+    console.log(CC)
 }
 
 //
