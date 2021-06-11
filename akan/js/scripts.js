@@ -73,3 +73,15 @@ function getAkanName(day,gender){
     }
     return akanName;
 }
+//get the day of birth 
+function claculateBirthDay() {
+    //Getting data from form fields
+    event.preventDefault();
+    var gender=document.getElementById('gender').value;
+    var birthday=document.getElementById('birthday').value;
+    var day=getDayofWeek(birthday);
+    var name=getAkanName(day,gender);
+    console.log(name);
+    document.getElementById('welcomeDiv').style.display = "block";
+    document.getElementById("welcomeDiv").innerHTML = "Your akan name is "+name;
+}
